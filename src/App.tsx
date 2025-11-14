@@ -202,7 +202,9 @@ function App() {
       id: 1,
       author: "Neeraj",
       title: "Into the Abyss: Exploring the Mysterious Deep Sea",
-      text: `When we think about the ocean, we often imagine gentle waves, blue waters, and colorful coral reefs. But beneath that familiar surface lies a world so dark, vast, and mysterious that scientists have explored less of it than the surface of the Moon. This hidden world is known as the deep sea—one of the last true frontiers on Earth.
+      text: "Great work on the deep sea theme! The color transitions are perfect.",
+      date: "Nov 10, 2025",
+      fullContent:  `When we think about the ocean, we often imagine gentle waves, blue waters, and colorful coral reefs. But beneath that familiar surface lies a world so dark, vast, and mysterious that scientists have explored less of it than the surface of the Moon. This hidden world is known as the deep sea—one of the last true frontiers on Earth.
 
 What Exactly Is the Deep Sea?
 
@@ -284,10 +286,7 @@ Why the Deep Sea Captivates Us
 
 The deep sea symbolizes the unknown—a place where strange creatures thrive, where life exists without sunlight, and where Earth still hides secrets waiting to be discovered.
 
-From glowing fish to underwater mountains, every expedition reveals something new. It reminds us just how little we truly understand about the world we live in.`,
-      date: "Nov 10, 2025",
-      fullContent:
-        "I'm really impressed with how the color transitions flow smoothly as users scroll through the page. The gradient from light ocean blue at the surface to almost black in the hadal zone creates an incredibly immersive experience. The transition feels natural and helps users understand the depth progression. The use of Motion's useTransform hook was the perfect choice for this effect. One thing I particularly appreciate is how the colors match actual ocean depth characteristics - it's both aesthetically pleasing and educationally accurate. This sets a strong foundation for the entire project.",
+From glowing fish to underwater mountains, every expedition reveals something new. It reminds us just how little we truly understand about the world we live in.`
     },
     {
       id: 2,
@@ -553,7 +552,7 @@ The deep sea doesn't reveal much, but the little it shows is enough to keep us h
             }}
             animate={{
               // FIX: Replaced -window.innerHeight - 100 with a large static value to prevent re-renders
-              y: [-50, -1200],
+              y: [-50, -1200], 
               x: [0, bubble.xMovement],
               opacity: [0, 0.6, 0],
             }}
