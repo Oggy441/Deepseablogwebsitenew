@@ -202,7 +202,7 @@ function App() {
       id: 1,
       author: "Neeraj",
       title: "Into the Abyss: Exploring the Mysterious Deep Sea",
-      text: "Great work on the deep sea theme! The color transitions are perfect.",
+      text: "The deep sea begins where sunlight can no longer reach—around 200 meters below the surface. From this point downward, pressure rises to crushing levels, temperatures drop close to freezing, and darkness becomes absolute.",
       date: "Nov 10, 2025",
       fullContent:  `When we think about the ocean, we often imagine gentle waves, blue waters, and colorful coral reefs. But beneath that familiar surface lies a world so dark, vast, and mysterious that scientists have explored less of it than the surface of the Moon. This hidden world is known as the deep sea—one of the last true frontiers on Earth.
 
