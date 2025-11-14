@@ -202,7 +202,7 @@ function App() {
       id: 1,
       author: "Neeraj",
       title: "Into the Abyss: Exploring the Mysterious Deep Sea",
-      text:  `When we think about the ocean, we often imagine gentle waves, blue waters, and colorful coral reefs. But beneath that familiar surface lies a world so dark, vast, and mysterious that scientists have explored less of it than the surface of the Moon. This hidden world is known as the deep sea—one of the last true frontiers on Earth.
+      text: `When we think about the ocean, we often imagine gentle waves, blue waters, and colorful coral reefs. But beneath that familiar surface lies a world so dark, vast, and mysterious that scientists have explored less of it than the surface of the Moon. This hidden world is known as the deep sea—one of the last true frontiers on Earth.
 
 What Exactly Is the Deep Sea?
 
@@ -553,7 +553,7 @@ The deep sea doesn't reveal much, but the little it shows is enough to keep us h
             }}
             animate={{
               // FIX: Replaced -window.innerHeight - 100 with a large static value to prevent re-renders
-              y: [-50, -1200], 
+              y: [-50, -1200],
               x: [0, bubble.xMovement],
               opacity: [0, 0.6, 0],
             }}
