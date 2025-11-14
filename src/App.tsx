@@ -35,7 +35,7 @@ const depthZones = [
         image:
           "https://images.unsplash.com/photo-1549557143-90d216195a97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWElMjB0dXJ0bGUlMjBvY2VhbnxlbnwxfHx8fDE3NjI2MTAzMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Rehan Ansari",
-        roll: "CO25343",
+        roll: "CO25341",
         date: "Nov 3, 2025",
       },
       {
@@ -62,7 +62,7 @@ const depthZones = [
         image:
           "https://images.unsplash.com/photo-1631001310285-64f0d5f06a21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwc2VhJTIwb2NlYW58ZW58MXx8fHwxNzYyNjEwMzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Ojas",
-        roll: "CO25343",
+        roll: "CO25344",
         date: "Oct 28, 2025",
         featured: true,
       },
@@ -101,7 +101,7 @@ const depthZones = [
         image:
           "https://images.unsplash.com/photo-1550998095-2c11477f02a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaW9sdW1pbmVzY2VudCUyMG9jZWFufGVufDF8fHx8MTc2MjYxMDMxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Kulraj Singh",
-        roll: "CO25343",
+        roll: "CO25332",
         date: "Oct 18, 2025",
       },
       {
@@ -147,7 +147,7 @@ const depthZones = [
         image:
           "https://images.unsplash.com/photo-1631001310285-64f0d5f06a21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwc2VhJTIwb2NlYW58ZW58MXx8fHwxNzYyNjEwMzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Kulraj Singh",
-        roll: "CO25343",
+        roll: "CO25332",
         date: "Oct 5, 2025",
       },
     ],
@@ -164,7 +164,7 @@ const depthZones = [
         image:
           "https://images.unsplash.com/photo-1714459821466-c19a3928f4f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvY2VhbiUyMHRyZW5jaHxlbnwxfHx8fDE3NjI2MTEwNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Ojas",
-        roll: "CO25343",
+        roll: "CO25344",
         date: "Oct 2, 2025",
       },
       {
@@ -184,7 +184,7 @@ const depthZones = [
         image:
           "https://images.unsplash.com/photo-1574377112212-fa04d63f5e52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwb2NlYW4lMjBhYnlzc3xlbnwxfHx8fDE3NjI2MTAzMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Rehan Ansari",
-        roll: "CO25343",
+        roll: "CO25341",
         date: "Sep 25, 2025",
       },
     ],
