@@ -526,11 +526,11 @@ The deep sea doesn't reveal much, but the little it shows is enough to keep us h
               <div className="flex items-center gap-2">
                 <Anchor className="w-6 h-6 text-cyan-300" />
                 <span className="text-white">
-                  DeepSea Chronicles
+                  Ocean Labs
                 </span>
               </div>
               <p className="text-blue-200/60 text-sm text-center">
-                © 2025 DeepSea Chronicles. Exploring the depths
+                © 2025 Ocean Labs. Exploring the depths
                 of our oceans from surface to hadal zone.
               </p>
             </div>
