@@ -63,7 +63,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1631001310285-64f0d5f06a21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwc2VhJTIwb2NlYW58ZW58MXx8fHwxNzYyNjEwMzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Ojas",
         roll: "CO25344",
-        date: "Oct 28, 2025",
+        date: "Nov 10, 2025",
         featured: true,
       },
       {
@@ -74,7 +74,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1530099531892-0932c5324757?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHx3aGFsZSUyMG9jZWFufGVufDF8fHx8MTc2MjYxMTA3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Neeraj",
         roll: "CO25343",
-        date: "Oct 25, 2025",
+        date: "Nov 11, 2025",
         featured: true,
       },
       {
@@ -85,7 +85,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1677396105034-06ba797233bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bmRlcndhdGVyJTIwamVsbHlmaXNofGVufDF8fHx8MTc2MjYxMDMxMnww&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Manan Sharma",
         roll: "CO25343",
-        date: "Oct 22, 2025",
+        date: "Nov 12, 2025",
       },
     ],
   },
@@ -102,7 +102,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1550998095-2c11477f02a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaW9sdW1pbmVzY2VudCUyMG9jZWFufGVufDF8fHx8MTc2MjYxMDMxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Kulraj Singh",
         roll: "CO25332",
-        date: "Oct 18, 2025",
+        date: "Nov 13, 2025",
       },
       {
         title: "Giant Squid: Legends of the Deep",
@@ -111,7 +111,7 @@ const depthZones = [
         image:
           "https://images.unsplash.com/photo-1602448059696-9ee76cedfdc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcXVpZCUyMHVuZGVyd2F0ZXJ8ZW58MXx8fHwxNzYyNjExMDc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Ojas",
-        date: "Oct 15, 2025",
+        date: "Nov 14, 2025",
       },
       {
         title: "Anglerfish: Luring in the Dark",
@@ -121,7 +121,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1761079398347-73994f7bb837?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxkZWVwJTIwc2VhJTIwYW5nbGVyZmlzaHxlbnwxfHx8fDE3NjI2MTEwNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Neeraj",
         roll: "CO25343",
-        date: "Oct 12, 2025",
+        date: "Nov 9, 2025",
       },
     ],
   },
@@ -138,7 +138,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1574377112212-fa04d63f5e52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwb2NlYW4lMjBhYnlzc3xlbnwxfHx8fDE3NjI2MTAzMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Manan Sharma",
         roll: "CO25343",
-        date: "Oct 8, 2025",
+        date: "Nov 8, 2025",
       },
       {
         title: "Abyssal Life: Surviving the Extremes",
@@ -148,7 +148,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1631001310285-64f0d5f06a21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwc2VhJTIwb2NlYW58ZW58MXx8fHwxNzYyNjEwMzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Kulraj Singh",
         roll: "CO25332",
-        date: "Oct 5, 2025",
+        date: "nov 5, 2025",
       },
     ],
   },
@@ -165,7 +165,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1714459821466-c19a3928f4f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvY2VhbiUyMHRyZW5jaHxlbnwxfHx8fDE3NjI2MTEwNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Ojas",
         roll: "CO25344",
-        date: "Oct 2, 2025",
+        date: "Nov 7, 2025",
       },
       {
         title: "Deep Submersibles: Exploring the Hadal Zone",
@@ -175,7 +175,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1622374634342-fd08ced47ba3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdWJtYXJpbmUlMjB1bmRlcndhdGVyfGVufDF8fHx8MTc2MjYxMTA3OHww&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Manan Sharma",
         roll: "CO25343",
-        date: "Sep 28, 2025",
+        date: "Nov 10, 2025",
       },
       {
         title: "Hadal Snailfish: Life at the Bottom",
@@ -185,7 +185,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1574377112212-fa04d63f5e52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwb2NlYW4lMjBhYnlzc3xlbnwxfHx8fDE3NjI2MTAzMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Rehan Ansari",
         roll: "CO25341",
-        date: "Sep 25, 2025",
+        date: "Nov 13, 2025",
       },
     ],
   },
