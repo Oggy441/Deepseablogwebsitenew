@@ -265,7 +265,7 @@ Deap sea makes me curious to know more about the animals living in it which may 
       author: "Manan Sharma",
       title: "Where the Light Ends and the Unknown Begins",
       text: "The deep sea has always felt like the most mysterious place on Earth. I didn't learn about it from textbooks — it was movies, reels, and documentary clips that showed me a world that becomes stranger the deeper you go.",
-      date: "Nov 6, 2025",
+      date: "Nov 14, 2025",
       fullContent: `The deep sea has always felt like the most mysterious place on Earth. I didn't learn about it from textbooks — it was movies, reels, and documentary clips that showed me a world that becomes stranger the deeper you go. That mix of fear, curiosity, and thrill is what pulled me in from the start.
 
 There's something cinematic about the moment sunlight fades underwater. One second it's normal ocean water, and the next it feels like you've entered another world. No color, no sound, just darkness and the unknown. It reminds me of outer space, but more unsettling because it's right here on our planet. The idea that such a huge part of Earth looks like an alien world is what makes it so fascinating to me.
