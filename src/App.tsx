@@ -202,7 +202,7 @@ function App() {
       id: 1,
       author: "Neeraj",
       title: "Into the Abyss: Exploring the Mysterious Deep Sea",
-      text: "The deep sea begins where sunlight can no longer reach—around 200 meters below the surface. From this point downward, pressure rises to crushing levels, temperatures drop close to freezing, and darkness becomes absolute.",
+      text: "When we think about the ocean, we often imagine gentle waves, blue waters, and colorful coral reefs. But beneath that familiar surface lies a world so dark, vast, and mysterious that scientists have explored less of it than the surface of the Moon. This hidden world is known as the deep sea—one of the last true frontiers on Earth.",
       date: "Nov 10, 2025",
       fullContent:  `When we think about the ocean, we often imagine gentle waves, blue waters, and colorful coral reefs. But beneath that familiar surface lies a world so dark, vast, and mysterious that scientists have explored less of it than the surface of the Moon. This hidden world is known as the deep sea—one of the last true frontiers on Earth.
 
@@ -293,7 +293,7 @@ From glowing fish to underwater mountains, every expedition reveals something ne
       author: "Rehan Ansari",
       title: "The Calm, the Fear, and the Space Beneath Us",
       // Short excerpt for the list view
-      text: "The deep sea is fascinating because of the contrast between the surface's calmness and the world-changing darkness, pressure, and fear a few hundred meters below.",
+      text: "The deep sea pulls me in for one simple reason: it looks calm, but everything about it feels wrong in the best way possible. It’s beautiful, silent, and peaceful on the surface — but the moment you go deeper, the entire world changes. Darkness replaces color, pressure replaces safety, and suddenly the ocean feels less like water and more like empty space. That contrast is what fascinates me: calmness on the outside, fear just a few hundred meters below.",
       date: "Nov 9, 2025",
       // Full content for the detail modal
       fullContent: `The deep sea pulls me in for one simple reason: it looks calm, but everything about it feels wrong in the best way possible. It’s beautiful, silent, and peaceful on the surface — but the moment you go deeper, the entire world changes. Darkness replaces color, pressure replaces safety, and suddenly the ocean feels less like water and more like empty space. That contrast is what fascinates me: calmness on the outside, fear just a few hundred meters below.
@@ -315,7 +315,7 @@ The deep sea is Earth’s own version of space — familiar yet unreachable, cal
       author: "Kulraj Singh",
       title: "Deepsea",
       // Short excerpt for the list view
-      text: "The deep sea is a mysterious world beginning at 200m, characterized by complete darkness, high pressure, and unique life forms like glowing jellyfish and fish with huge teeth.",
+      text: "I’ve always known that most of Earth is covered by water, but recently, I started wondering what exists deep under the ocean’s surface. The deep sea sounds mysterious and even a little scary. It’s a world almost hidden from us, and humans have only explored a small part of it",
       date: "Nov 8, 2025",
       // Full content for the detail modal
       fullContent: `I’ve always known that most 
@@ -330,7 +330,7 @@ Even though I don’t know much yet, the more I get knowledge about the deep sea
       author: "Ojas",
       title: "The unknown depth",
       // Short excerpt for the list view
-      text: "The deep sea is similar to an imaginary world with dark creatures and unique facts, making me curious about the high pressure and absence of light.",
+      text: "Personally deep sea got my intrest due to its qualities very much similar to the imaginary world consist of dark creatures , intresting facts And the more you know about deep sea , you get more intrested into it",
       date: "Nov 7, 2025",
       // Full content for the detail modal
       fullContent: `Personally deep sea got my intrest due to its qualities very much similar to the imaginary world consist of dark creatures , intresting factss 
@@ -345,7 +345,7 @@ Deap sea makes me curious to know more about the animals living in it which may 
       id: 5,
       author: "Manan Sharma",
       title: "Where the Light Ends and the Unknown Begins",
-      text: "The deep sea has always felt like the most mysterious place on Earth. I didn't learn about it from textbooks — it was movies, reels, and documentary clips that showed me a world that becomes stranger the deeper you go.",
+      text: "The deep sea has always felt like the most mysterious place on Earth. I didn't learn about it from textbooks — it was movies, reels, and documentary clips that showed me a world that becomes stranger the deeper you go. That mix of fear, curiosity, and thrill is what pulled me in from the start.",
       date: "Nov 14, 2025",
       fullContent: `The deep sea has always felt like the most mysterious place on Earth. I didn't learn about it from textbooks — it was movies, reels, and documentary clips that showed me a world that becomes stranger the deeper you go. That mix of fear, curiosity, and thrill is what pulled me in from the start.
 
