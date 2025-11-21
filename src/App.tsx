@@ -8,7 +8,10 @@ import {
 import { Hero } from "./components/Hero";
 import { BlogPost } from "./components/BlogPost";
 import { BlogPostDetail } from "./components/BlogPostDetail";
-import { Waves, Anchor, X } from "lucide-react";
+import { PhotoEssay } from "./components/PhotoEssay";
+import { BlogEntriesPage } from "./components/BlogEntriesPage";
+import { IndividualBlogEntry } from "./components/IndividualBlogEntry";
+import { Waves, Anchor, X, BookOpen, Camera } from "lucide-react";
 import { blogPostsContent } from "./data/blogPostsContent";
 
 // Organized by ocean depth zones
@@ -26,7 +29,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1595503240812-7286dafaddc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3JhbCUyMHJlZWYlMjBmaXNofGVufDF8fHx8MTc2MjYxMDMxMnww&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Neeraj",
         roll: "CO25343",
-        date: "Nov 5, 2025",
+        date: "Nov 18, 2025",
       },
       {
         title: "Sea Turtles: Navigators of the Surface Waters",
@@ -36,7 +39,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1549557143-90d216195a97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWElMjB0dXJ0bGUlMjBvY2VhbnxlbnwxfHx8fDE3NjI2MTAzMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Rehan Ansari",
         roll: "CO25343",
-        date: "Nov 3, 2025",
+        date: "Nov 12, 2025",
       },
       {
         title: "Plankton: The Foundation of Ocean Life",
@@ -46,7 +49,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1727373235151-942ac24b9a5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvY2VhbiUyMHBsYW5rdG9ufGVufDF8fHx8MTc2MjYxMTA3OHww&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Manan Sharma",
         roll: "CO25343",
-        date: "Nov 1, 2025",
+        date: "Nov 9, 2025",
       },
     ],
   },
@@ -63,7 +66,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1631001310285-64f0d5f06a21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwc2VhJTIwb2NlYW58ZW58MXx8fHwxNzYyNjEwMzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Ojas",
         roll: "CO25343",
-        date: "Oct 28, 2025",
+        date: "Nov 15, 2025",
         featured: true,
       },
       {
@@ -74,7 +77,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1530099531892-0932c5324757?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHx3aGFsZSUyMG9jZWFufGVufDF8fHx8MTc2MjYxMTA3N3ww&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Neeraj",
         roll: "CO25343",
-        date: "Oct 25, 2025",
+        date: "Nov 19, 2025",
         featured: true,
       },
       {
@@ -85,7 +88,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1677396105034-06ba797233bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bmRlcndhdGVyJTIwamVsbHlmaXNofGVufDF8fHx8MTc2MjYxMDMxMnww&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Manan Sharma",
         roll: "CO25343",
-        date: "Oct 22, 2025",
+        date: "Nov 10, 2025",
       },
     ],
   },
@@ -102,7 +105,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1550998095-2c11477f02a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaW9sdW1pbmVzY2VudCUyMG9jZWFufGVufDF8fHx8MTc2MjYxMDMxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Kulraj Singh",
         roll: "CO25343",
-        date: "Oct 18, 2025",
+        date: "Nov 14, 2025",
       },
       {
         title: "Giant Squid: Legends of the Deep",
@@ -111,7 +114,7 @@ const depthZones = [
         image:
           "https://images.unsplash.com/photo-1602448059696-9ee76cedfdc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcXVpZCUyMHVuZGVyd2F0ZXJ8ZW58MXx8fHwxNzYyNjExMDc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Ojas",
-        date: "Oct 15, 2025",
+        date: "Nov 11, 2025",
       },
       {
         title: "Anglerfish: Luring in the Dark",
@@ -121,7 +124,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1761079398347-73994f7bb837?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHxkZWVwJTIwc2VhJTIwYW5nbGVyZmlzaHxlbnwxfHx8fDE3NjI2MTEwNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Neeraj",
         roll: "CO25343",
-        date: "Oct 12, 2025",
+        date: "Nov 16, 2025",
       },
     ],
   },
@@ -138,7 +141,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1574377112212-fa04d63f5e52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwb2NlYW4lMjBhYnlzc3xlbnwxfHx8fDE3NjI2MTAzMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Manan Sharma",
         roll: "CO25343",
-        date: "Oct 8, 2025",
+        date: "Nov 13, 2025",
       },
       {
         title: "Abyssal Life: Surviving the Extremes",
@@ -148,7 +151,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1631001310285-64f0d5f06a21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwc2VhJTIwb2NlYW58ZW58MXx8fHwxNzYyNjEwMzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Kulraj Singh",
         roll: "CO25343",
-        date: "Oct 5, 2025",
+        date: "Nov 8, 2025",
       },
     ],
   },
@@ -165,7 +168,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1714459821466-c19a3928f4f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvY2VhbiUyMHRyZW5jaHxlbnwxfHx8fDE3NjI2MTEwNzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Ojas",
         roll: "CO25343",
-        date: "Oct 2, 2025",
+        date: "Nov 17, 2025",
       },
       {
         title: "Deep Submersibles: Exploring the Hadal Zone",
@@ -175,7 +178,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1622374634342-fd08ced47ba3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdWJtYXJpbmUlMjB1bmRlcndhdGVyfGVufDF8fHx8MTc2MjYxMTA3OHww&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Manan Sharma",
         roll: "CO25343",
-        date: "Sep 28, 2025",
+        date: "Nov 20, 2025",
       },
       {
         title: "Hadal Snailfish: Life at the Bottom",
@@ -185,7 +188,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1574377112212-fa04d63f5e52?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwb2NlYW4lMjBhYnlzc3xlbnwxfHx8fDE3NjI2MTAzMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Rehan Ansari",
         roll: "CO25343",
-        date: "Sep 25, 2025",
+        date: "Nov 7, 2025",
       },
     ],
   },
@@ -197,6 +200,10 @@ function App() {
   const [selectedPost, setSelectedPost] = useState<any>(null);
   const [selectedNote, setSelectedNote] = useState<any>(null);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [showPhotoEssay, setShowPhotoEssay] = useState(false);
+  const [showBlogEntriesPage, setShowBlogEntriesPage] = useState(false);
+  const [selectedBlogEntry, setSelectedBlogEntry] = useState<string | null>(null);
   const [notes] = useState([
     {
       id: 1,
@@ -342,14 +349,51 @@ The deep sea doesn't reveal much, but the little it shows is enough to keep us h
           className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-black/20 backdrop-blur-sm"
         >
           <div className="max-w-7xl mx-auto flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setIsDrawerOpen(true)}
-                className="hover:scale-110 transition-transform cursor-pointer"
-                aria-label="Open notes drawer"
-              >
-                <Waves className="w-8 h-8 text-cyan-300" />
-              </button>
+            <div className="flex items-center gap-2 relative">
+              <div className="relative">
+                <button
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  onBlur={() => setTimeout(() => setIsDropdownOpen(false), 200)}
+                  className="hover:scale-110 transition-transform cursor-pointer"
+                  aria-label="Open menu"
+                >
+                  <Waves className="w-8 h-8 text-cyan-300" />
+                </button>
+                
+                {/* Dropdown Menu */}
+                <AnimatePresence>
+                  {isDropdownOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className="absolute top-full left-0 mt-2 w-48 bg-gradient-to-b from-[rgb(11,47,88)] to-[rgb(10,25,47)] border border-cyan-400/30 rounded-xl shadow-2xl overflow-hidden z-[100]"
+                    >
+                      <button
+                        onClick={() => {
+                          setShowPhotoEssay(false);
+                          setShowBlogEntriesPage(true);
+                          setIsDropdownOpen(false);
+                        }}
+                        className="w-full px-4 py-3 text-left flex items-center gap-3 hover:bg-white/10 transition-colors text-cyan-300 hover:text-cyan-200"
+                      >
+                        <BookOpen className="w-4 h-4" />
+                        <span>Blog Entries</span>
+                      </button>
+                      <button
+                        onClick={() => {
+                          setShowPhotoEssay(true);
+                          setIsDropdownOpen(false);
+                        }}
+                        className="w-full px-4 py-3 text-left flex items-center gap-3 hover:bg-white/10 transition-colors text-cyan-300 hover:text-cyan-200"
+                      >
+                        <Camera className="w-4 h-4" />
+                        <span>Photo Essay</span>
+                      </button>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
               <span className="text-xl text-white">
                 Ocean Labs
               </span>
@@ -441,17 +485,36 @@ The deep sea doesn't reveal much, but the little it shows is enough to keep us h
         {/* Footer */}
         <footer className="relative z-10 border-t border-white/10 mt-32">
           <div className="max-w-6xl mx-auto px-6 py-12">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="flex items-center gap-2">
-                <Anchor className="w-6 h-6 text-cyan-300" />
-                <span className="text-white">
-                  DeepSea Chronicles
-                </span>
+            <div className="flex flex-col items-center gap-8">
+              {/* Contact Section */}
+              <div className="w-full max-w-md">
+                <form className="flex flex-col sm:flex-row gap-3" onSubmit={(e) => e.preventDefault()}>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="flex-1 px-4 py-3 bg-white/5 border border-cyan-400/30 rounded-lg text-white placeholder:text-blue-200/50 focus:outline-none focus:border-cyan-400/60 focus:bg-white/10 transition-all"
+                  />
+                  <button
+                    type="submit"
+                    className="px-6 py-3 bg-cyan-500/20 border border-cyan-400/40 rounded-lg text-cyan-300 hover:bg-cyan-500/30 hover:border-cyan-400/60 transition-all"
+                  >
+                    Get in Touch
+                  </button>
+                </form>
               </div>
-              <p className="text-blue-200/60 text-sm text-center">
-                © 2025 DeepSea Chronicles. Exploring the depths
-                of our oceans from surface to hadal zone.
-              </p>
+
+              {/* Footer Info */}
+              <div className="flex flex-col md:flex-row items-center justify-between gap-6 w-full">
+                <div className="flex items-center gap-2">
+                  <Anchor className="w-6 h-6 text-cyan-300" />
+                  <span className="text-white">
+                    OceanLabs
+                  </span>
+                </div>
+                <p className="text-blue-200/60 text-sm text-center">
+                  © 2025 OceanLabs — Exploring the depths from surface to trench.
+                </p>
+              </div>
             </div>
           </div>
         </footer>
@@ -639,6 +702,43 @@ The deep sea doesn't reveal much, but the little it shows is enough to keep us h
             </motion.div>
           </>
         )}
+      </AnimatePresence>
+
+      {/* Photo Essay Page */}
+      <AnimatePresence>
+        {showPhotoEssay && (
+          <PhotoEssay onClose={() => setShowPhotoEssay(false)} />
+        )}
+      </AnimatePresence>
+
+      {/* Blog Entries Page */}
+      <AnimatePresence>
+        {showBlogEntriesPage && !selectedBlogEntry && (
+          <BlogEntriesPage
+            onClose={() => setShowBlogEntriesPage(false)}
+            onSelectEntry={(author) => setSelectedBlogEntry(author)}
+          />
+        )}
+      </AnimatePresence>
+
+      {/* Individual Blog Entry */}
+      <AnimatePresence>
+        {selectedBlogEntry && (() => {
+          const note = notes.find(n => n.author === selectedBlogEntry);
+          return note ? (
+            <IndividualBlogEntry
+              author={note.author}
+              title={note.title}
+              date={note.date}
+              content={note.fullContent}
+              onClose={() => {
+                setSelectedBlogEntry(null);
+                setShowBlogEntriesPage(false);
+              }}
+              onBack={() => setSelectedBlogEntry(null)}
+            />
+          ) : null;
+        })()}
       </AnimatePresence>
     </>
   );
