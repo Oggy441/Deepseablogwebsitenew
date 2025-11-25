@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { X } from "lucide-react";
+import jellyfishImage from "figma:asset/80c4bd59da08a695f3f68241adf4aa8a1e260f36.png";
 
 interface PhotoEssayProps {
   onClose: () => void;
@@ -63,8 +64,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
           <div className="space-y-12">
             {/* Science Image 1 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Bioluminescent Anglerfish</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Bioluminescent Jellyfish" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">Bioluminescence in the Bathypelagic Zone</h3>
               <p className="text-blue-100/70">In the total absence of sunlight, creatures evolve to create their own light to attract prey or find mates in the dark.</p>
@@ -72,8 +73,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Science Image 2 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Hydrothermal Vent with Tube Worms</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Hydrothermal Vent with Tube Worms" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">Hydrothermal Vents</h3>
               <p className="text-blue-100/70">Driven by volcanic heat, these vents support ecosystems through chemosynthesis.</p>
@@ -81,8 +82,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Science Image 3 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Whale Skeleton on Ocean Floor</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Whale Skeleton on Ocean Floor" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">Whale Fall Ecosystem</h3>
               <p className="text-blue-100/70">A whale's sinking body forms a pop-up ecosystem that lasts decades.</p>
@@ -90,8 +91,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Science Image 4 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Japanese Spider Crab</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Japanese Spider Crab" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">Abyssal Gigantism</h3>
               <p className="text-blue-100/70">Extreme pressure and cold drive some deep-sea animals to enormous sizes.</p>
@@ -99,8 +100,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Science Image 5 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Marine Snow Particles</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Marine Snow Particles" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">Marine Snow</h3>
               <p className="text-blue-100/70">Falling organic matter feeds the scavengers of the deep.</p>
@@ -108,8 +109,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Science Image 6 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Underwater Brine Pool</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Underwater Brine Pool" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">Brine Pools</h3>
               <p className="text-blue-100/70">Toxic brine pools support unique life powered by methane-eating bacteria.</p>
@@ -117,8 +118,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Science Image 7 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Mariana Trench 3D Map</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Mariana Trench 3D Map" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">Hadal Zone Topography</h3>
               <p className="text-blue-100/70">The Hadal zone plunges down to nearly 11,000 meters.</p>
@@ -126,8 +127,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Science Image 8 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: ROV Submersible</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="ROV Submersible" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">ROV Exploration</h3>
               <p className="text-blue-100/70">ROVs explore places too deep and too pressurized for humans.</p>
@@ -152,8 +153,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
           <div className="space-y-12">
             {/* Story Image 1 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Sailboat Above Sea Monster Shadow</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Sailboat Above Sea Monster Shadow" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">The Leviathan</h3>
               <p className="text-blue-100/70">Ancient sailors imagined monsters lurking just below the surface.</p>
@@ -161,8 +162,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Story Image 2 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Sunken Ruins</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Sunken Ruins" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">The Sunken City</h3>
               <p className="text-blue-100/70">Atlantis symbolizes our desire to find lost worlds beneath the waves.</p>
@@ -170,8 +171,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Story Image 3 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Mysterious Figure in Water</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Mysterious Figure in Water" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">The Siren's Call</h3>
               <p className="text-blue-100/70">The ocean is personified as a beautiful but dangerous force.</p>
@@ -179,8 +180,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Story Image 4 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Ghost Ship in Fog</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Ghost Ship in Fog" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">The Ghost Ship</h3>
               <p className="text-blue-100/70">Shipwrecks become silent time capsules of forgotten tragedies.</p>
@@ -188,8 +189,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Story Image 5 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Lone Diver in Abyss</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Lone Diver in Abyss" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">Thalassophobia</h3>
               <p className="text-blue-100/70">The deep sea evokes fear of isolation and the unknown.</p>
@@ -197,8 +198,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Story Image 6 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Glowing Eyes in Darkness</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Glowing Eyes in Darkness" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">The Guardian of the Trench</h3>
               <p className="text-blue-100/70">Myths warn that the deepest places are watched by ancient beings.</p>
@@ -206,8 +207,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Story Image 7 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Treasure Chest with Gold</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Treasure Chest with Gold" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">The Treasure</h3>
               <p className="text-blue-100/70">The ocean keeps the secrets of fortunes lost to storms.</p>
@@ -215,8 +216,8 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
 
             {/* Story Image 8 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
-              <div className="bg-gradient-to-b from-blue-900/50 to-black/50 rounded-xl aspect-[16/10] mb-4 flex items-center justify-center">
-                <p className="text-cyan-300/50 text-sm">Image: Ocean/Sky Mirror</p>
+              <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
+                <img src={jellyfishImage} alt="Ocean/Sky Mirror" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">The Mirror</h3>
               <p className="text-blue-100/70">The sea mirrors the mystery of outer space.</p>
