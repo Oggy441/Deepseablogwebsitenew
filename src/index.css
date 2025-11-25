@@ -76,7 +76,6 @@
     --color-cyan-500: oklch(.715 .143 215.221);
     --color-blue-100: oklch(.932 .032 255.585);
     --color-blue-200: oklch(.882 .059 254.128);
-    --color-blue-900: oklch(.379 .146 265.522);
     --color-blue-950: oklch(.282 .091 267.935);
     --color-slate-900: oklch(.208 .042 265.755);
     --color-gray-100: oklch(.967 .003 264.542);
@@ -1069,17 +1068,6 @@
     }
   }
 
-  .from-blue-900\/50 {
-    --tw-gradient-from: color-mix(in srgb, oklch(.379 .146 265.522) 50%, transparent);
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .from-blue-900\/50 {
-      --tw-gradient-from: color-mix(in oklab, var(--color-blue-900) 50%, transparent);
-    }
-  }
-
   .from-slate-900 {
     --tw-gradient-from: var(--color-slate-900);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -1140,17 +1128,6 @@
   .to-\[rgb\(10\,25\,47\)\] {
     --tw-gradient-to: #0a192f;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-
-  .to-black\/50 {
-    --tw-gradient-to: #00000080;
-    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .to-black\/50 {
-      --tw-gradient-to: color-mix(in oklab, var(--color-black) 50%, transparent);
-    }
   }
 
   .to-blue-950 {
@@ -1382,16 +1359,6 @@
 
   .text-cyan-300 {
     color: var(--color-cyan-300);
-  }
-
-  .text-cyan-300\/50 {
-    color: color-mix(in srgb, oklch(.865 .127 207.078) 50%, transparent);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .text-cyan-300\/50 {
-      color: color-mix(in oklab, var(--color-cyan-300) 50%, transparent);
-    }
   }
 
   .text-cyan-300\/70 {
