@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { X } from "lucide-react";
-
+import anglerFish from "../Images/Angler-fish.jpg";
 interface PhotoEssayProps {
   onClose: () => void;
 }
@@ -64,7 +64,7 @@ export function PhotoEssay({ onClose }: PhotoEssayProps) {
             {/* Story Image 1 */}
             <div className="bg-white/5 border border-cyan-400/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all">
               <div className="rounded-xl aspect-[16/10] mb-4 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1601488844122-ad4c59bba0be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhbmdsZXJmaXNoJTIwZ2xvd2luZyUyMGRhcmt8ZW58MXx8fHwxNzY0MTg0NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Glowing anglerfish lure in darkness" className="w-full h-full object-cover" />
+                <img src="{anglerFish}" alt="Glowing anglerfish lure in darkness" className="w-full h-full object-cover" />
               </div>
               <h3 className="text-xl text-white mb-2">Finding Nemo — Anglerfish</h3>
               <p className="text-blue-100/70">One of the most unforgettable scenes—pure fear, pure darkness. The deep ocean becomes a character, not just a place.</p>
