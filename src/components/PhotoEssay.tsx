@@ -14,7 +14,7 @@ import seabed2030 from "../Images/Seabed-2030.png";
 import sonarSlow from "../Images/Sonar-slow.png";
 import thalassophobia from "../Images/Thalassophobia.jpg";
 import titanicWreck from "../Images/titanic-wreck.jpg";
-import Mirror from "../Images/mirror.jpg";
+import Mirror from "../Images/mirror.png";
 import Mapping from "../Images/AI-ocean.png";
 interface PhotoEssayProps {
   onClose: () => void;
