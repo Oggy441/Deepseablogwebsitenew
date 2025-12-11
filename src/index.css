@@ -82,7 +82,6 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: .25rem;
-    --container-md: 28rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
     --container-4xl: 56rem;
@@ -745,10 +744,6 @@
     max-width: var(--container-7xl);
   }
 
-  .max-w-md {
-    max-width: var(--container-md);
-  }
-
   .max-w-none {
     max-width: none;
   }
@@ -811,10 +806,6 @@
 
   .gap-6 {
     gap: calc(var(--spacing) * 6);
-  }
-
-  .gap-8 {
-    gap: calc(var(--spacing) * 8);
   }
 
   :where(.space-y-3 > :not(:last-child)) {
@@ -896,16 +887,6 @@
   @supports (color: color-mix(in lab, red, red)) {
     .border-cyan-400\/30 {
       border-color: color-mix(in oklab, var(--color-cyan-400) 30%, transparent);
-    }
-  }
-
-  .border-cyan-400\/40 {
-    border-color: color-mix(in srgb, oklch(.789 .154 211.53) 40%, transparent);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .border-cyan-400\/40 {
-      border-color: color-mix(in oklab, var(--color-cyan-400) 40%, transparent);
     }
   }
 
@@ -1467,16 +1448,6 @@
     }
   }
 
-  .placeholder\:text-blue-200\/50::placeholder {
-    color: color-mix(in srgb, oklch(.882 .059 254.128) 50%, transparent);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .placeholder\:text-blue-200\/50::placeholder {
-      color: color-mix(in oklab, var(--color-blue-200) 50%, transparent);
-    }
-  }
-
   @media (hover: hover) {
     .hover\:scale-110:hover {
       --tw-scale-x: 110%;
@@ -1523,18 +1494,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:border-cyan-400\/60:hover {
-      border-color: color-mix(in srgb, oklch(.789 .154 211.53) 60%, transparent);
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:border-cyan-400\/60:hover {
-        border-color: color-mix(in oklab, var(--color-cyan-400) 60%, transparent);
-      }
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:bg-black\/50:hover {
       background-color: #00000080;
     }
@@ -1542,18 +1501,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       .hover\:bg-black\/50:hover {
         background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
-      }
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:bg-cyan-500\/30:hover {
-      background-color: color-mix(in srgb, oklch(.715 .143 215.221) 30%, transparent);
-    }
-
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-cyan-500\/30:hover {
-        background-color: color-mix(in oklab, var(--color-cyan-500) 30%, transparent);
       }
     }
   }
@@ -1585,37 +1532,6 @@
   @media (hover: hover) {
     .hover\:text-cyan-200:hover {
       color: var(--color-cyan-200);
-    }
-  }
-
-  .focus\:border-cyan-400\/60:focus {
-    border-color: color-mix(in srgb, oklch(.789 .154 211.53) 60%, transparent);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .focus\:border-cyan-400\/60:focus {
-      border-color: color-mix(in oklab, var(--color-cyan-400) 60%, transparent);
-    }
-  }
-
-  .focus\:bg-white\/10:focus {
-    background-color: #ffffff1a;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .focus\:bg-white\/10:focus {
-      background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
-    }
-  }
-
-  .focus\:outline-none:focus {
-    --tw-outline-style: none;
-    outline-style: none;
-  }
-
-  @media (width >= 40rem) {
-    .sm\:flex-row {
-      flex-direction: row;
     }
   }
 

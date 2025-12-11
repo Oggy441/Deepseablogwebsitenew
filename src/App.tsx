@@ -244,12 +244,13 @@ The deep sea is Earth’s own version of space — familiar yet unreachable, cal
       text: "The deep sea is a mysterious world beginning at 200m, characterized by complete darkness, high pressure, and unique life forms like glowing jellyfish and fish with huge teeth.",
       date: "Nov 8, 2025",
       // Full content for the detail modal
-      fullContent: `I’ve always known that most 
-of Earth is covered by water, but recently, I started wondering what exists deep under the ocean’s surface. The deep sea sounds mysterious and even a little scary. It’s a world almost hidden from us, and humans have only explored a small part of it.
+      fullContent: `I've always known that most of the Earth is covered by water, but only recently I started wondering what actually exists far below the surface. The deep sea feels mysterious and even a little scary — a whole world that's right here on our planet but still almost completely hidden from us. Humans have explored mountains, skies, even space… but the deep ocean is still mostly unknown.
 
-Taking knowledge of deepsea from the YouTube videos of channels like gaurav katare , getsetflySCIENCE , dhruv rathee, etc .I came to know that the deep sea begins where sunlight can no longer reach. That’s usually about 200 meters below the surface. Down there, it’s completely dark, freezing cold, and the pressure is unbelievably high—strong enough to crush a normal submarine. Yet somehow, life manages to survive in those extreme conditions. There are strange creatures like glowing jellyfish, fish with huge teeth. Scientists are still discovering new species each year in the deep sea. It feels like an alien world right here on Earth.The deep sea also plays an important role in our planet’s health. It helps control the Earth’s temperature and stores a lot of carbon dioxide, which affects the climate.
+From watching YouTube channels like Gaurav Kate, GetSetFly Science and Dhruv Rathee, I learned that the deep sea begins where sunlight can no longer reach — around 200 meters below the surface. After that point, everything changes. It's pitch dark, freezing cold, and the pressure becomes strong enough to crush a normal submarine. And yet, somehow, life still survives there. Strange creatures glow in the dark, some have huge teeth, some look transparent, and scientists keep discovering new species every year. It honestly feels like an alien world that just happens to be underwater.
 
-Even though I don’t know much yet, the more I get knowledge about the deep sea, the more I want to dive deeper into its mysteries of deep sea`,
+Something that surprised me is how important the deep sea is for the whole planet. It helps control Earth's temperature, stores carbon dioxide, and supports global climate systems. So even though most of us will never see it, it affects our lives every day.
+
+I still don't know a lot, but the more I learn about the deep sea, the more I want to go deeper into its mysteries. There's something exciting about knowing that the world still has places we haven't fully understood.`,
     },
     {
       id: 4,
@@ -259,13 +260,13 @@ Even though I don’t know much yet, the more I get knowledge about the deep sea
       text: "The deep sea is similar to an imaginary world with dark creatures and unique facts, making me curious about the high pressure and absence of light.",
       date: "Nov 7, 2025",
       // Full content for the detail modal
-      fullContent: `Personally deep sea got my intrest due to its qualities very much similar to the imaginary world consist of dark creatures , intresting factss 
-And the more you know about deep sea , you get more intrested into it
+      fullContent: `The Unknown Depth
 
-I got to know abt deep sea through youtube videos , which 
-Led me more towards it due to its fascinating facts which were very unique compared to more popular ecosystems . In those yt videos , i knew how high pressure in deep sea led to abnormal structures of animals in it , as well as that no sunlight can reach there due to its depth. 
+The deep sea caught my interest because it feels exactly like the kind of imaginary world filled with dark creatures, strange shapes, and unbelievable facts. The more I learn about it, the more my curiosity grows. It's one of those places where every new detail makes you want to know ten more.
 
-Deap sea makes me curious to know more about the animals living in it which may make me fearful , but also makes me more curious about them`,
+I first got into deep-sea content through YouTube videos, and those videos opened up a completely different side of nature for me. Unlike forests or deserts — which we see often — the deep sea is full of facts that feel unique and almost unreal. I learned how extreme pressure at those depths changes the shape of animals, how some creatures survive without sunlight, and how the ocean turns into complete darkness after a certain point.
+
+The deep sea makes me curious about the creatures living in it — even the creepy ones. Yes, some of them look scary, but that fear also makes the whole thing more interesting. It's rare to find a place on Earth where we genuinely don't know what's hiding out there, and that mystery is what pulls me in.`,
     },
     {
       id: 5,
@@ -485,36 +486,16 @@ The deep sea doesn't reveal much, but the little it shows is enough to keep us h
         {/* Footer */}
         <footer className="relative z-10 border-t border-white/10 mt-32">
           <div className="max-w-6xl mx-auto px-6 py-12">
-            <div className="flex flex-col items-center gap-8">
-              {/* Contact Section */}
-              <div className="w-full max-w-md">
-                <form className="flex flex-col sm:flex-row gap-3" onSubmit={(e) => e.preventDefault()}>
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="flex-1 px-4 py-3 bg-white/5 border border-cyan-400/30 rounded-lg text-white placeholder:text-blue-200/50 focus:outline-none focus:border-cyan-400/60 focus:bg-white/10 transition-all"
-                  />
-                  <button
-                    type="submit"
-                    className="px-6 py-3 bg-cyan-500/20 border border-cyan-400/40 rounded-lg text-cyan-300 hover:bg-cyan-500/30 hover:border-cyan-400/60 transition-all"
-                  >
-                    Get in Touch
-                  </button>
-                </form>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6 w-full">
+              <div className="flex items-center gap-2">
+                <Anchor className="w-6 h-6 text-cyan-300" />
+                <span className="text-white">
+                  OceanLabs
+                </span>
               </div>
-
-              {/* Footer Info */}
-              <div className="flex flex-col md:flex-row items-center justify-between gap-6 w-full">
-                <div className="flex items-center gap-2">
-                  <Anchor className="w-6 h-6 text-cyan-300" />
-                  <span className="text-white">
-                    OceanLabs
-                  </span>
-                </div>
-                <p className="text-blue-200/60 text-sm text-center">
-                  © 2025 OceanLabs — Exploring the depths from surface to trench.
-                </p>
-              </div>
+              <p className="text-blue-200/60 text-sm text-center">
+                © 2025 OceanLabs — Exploring the depths from surface to trench.
+              </p>
             </div>
           </div>
         </footer>
