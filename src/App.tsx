@@ -1,17 +1,13 @@
-import { useEffect, useState, useMemo } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  AnimatePresence,
-} from "motion/react";
+import { useEffect, useState, useMemo, useRef } from "react";
+import { motion, AnimatePresence, useScroll, useTransform } from "motion/react";
 import { Hero } from "./components/Hero";
 import { BlogPost } from "./components/BlogPost";
 import { BlogPostDetail } from "./components/BlogPostDetail";
 import { PhotoEssay } from "./components/PhotoEssay";
+import { VideoEssay } from "./components/VideoEssay";
 import { BlogEntriesPage } from "./components/BlogEntriesPage";
 import { IndividualBlogEntry } from "./components/IndividualBlogEntry";
-import { Waves, Anchor, X, BookOpen, Camera } from "lucide-react";
+import { Waves, Anchor, X, BookOpen, Camera, Video } from "lucide-react";
 import { blogPostsContent } from "./data/blogPostsContent";
 
 // Organized by ocean depth zones
@@ -66,7 +62,7 @@ const depthZones = [
           "https://images.unsplash.com/photo-1631001310285-64f0d5f06a21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwc2VhJTIwb2NlYW58ZW58MXx8fHwxNzYyNjEwMzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
         author: "Ojas",
         roll: "CO25343",
-        date: "Nov 15, 2025",
+        date: "Nov 15, 2025",    
         featured: true,
       },
       {
@@ -202,8 +198,15 @@ function App() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showPhotoEssay, setShowPhotoEssay] = useState(false);
+  const [showVideoEssay, setShowVideoEssay] = useState(false);
   const [showBlogEntriesPage, setShowBlogEntriesPage] = useState(false);
   const [selectedBlogEntry, setSelectedBlogEntry] = useState<string | null>(null);
+  const [currentZoneIndex, setCurrentZoneIndex] = useState(0);
+  const [currentDepthInZone, setCurrentDepthInZone] = useState(0);
+  
+  // Refs for each zone section
+  const zoneRefs = useRef<(HTMLDivElement | null)[]>([]);
+
   const [notes] = useState([
     {
       id: 1,
@@ -323,19 +326,69 @@ The deep sea doesn't reveal much, but the little it shows is enough to keep us h
     return () => unsubscribe();
   }, [scrollYProgress]);
 
+  // Intersection Observer to track which zone is in view and calculate calibrated depth
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+    
+    // Define depth ranges for each zone
+    const zoneDepthRanges = [
+      { min: 0, max: 200 },      // Sunlight Zone
+      { min: 200, max: 1000 },   // Twilight Zone
+      { min: 1000, max: 4000 },  // Midnight Zone
+      { min: 4000, max: 6000 },  // Abyssal Zone
+      { min: 6000, max: 11000 }, // Hadal Zone
+    ];
+
+    zoneRefs.current.forEach((ref, index) => {
+      if (!ref) return;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Calculate how far through this section we are
+              const rect = entry.boundingClientRect;
+              const viewportHeight = window.innerHeight;
+              const elementHeight = rect.height;
+              
+              // Calculate progress through the section (0 to 1)
+              // When element just enters viewport from bottom, progress = 0
+              // When element exits viewport from top, progress = 1
+              const elementTop = rect.top;
+              const scrollableDistance = elementHeight + viewportHeight;
+              const scrolled = viewportHeight - elementTop;
+              const sectionProgress = Math.max(0, Math.min(1, scrolled / scrollableDistance));
+              
+              // Calculate depth based on zone range and progress
+              const range = zoneDepthRanges[index];
+              const depthInZone = range.min + (sectionProgress * (range.max - range.min));
+              
+              setCurrentZoneIndex(index);
+              setCurrentDepthInZone(Math.round(depthInZone));
+            }
+          });
+        },
+        {
+          threshold: Array.from({ length: 101 }, (_, i) => i / 100), // Track at 1% intervals
+          rootMargin: '-20% 0px -20% 0px' // Center viewport detection
+        }
+      );
+
+      observer.observe(ref);
+      observers.push(observer);
+    });
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, []);
+
   // Calculate current depth in meters (0-11000m)
-  const currentDepthMeters = Math.round(scrollProgress * 11000);
+  // Use calibrated depth from zone tracking
+  const currentDepthMeters = currentDepthInZone;
 
-  // Determine current zone based on depth
-  const getCurrentZone = () => {
-    if (currentDepthMeters < 200) return depthZones[0];
-    if (currentDepthMeters < 1000) return depthZones[1];
-    if (currentDepthMeters < 4000) return depthZones[2];
-    if (currentDepthMeters < 6000) return depthZones[3];
-    return depthZones[4];
-  };
-
-  const currentZone = getCurrentZone();
+  // Determine current zone based on zone index
+  const currentZone = depthZones[currentZoneIndex];
 
   return (
     <>
@@ -372,7 +425,6 @@ The deep sea doesn't reveal much, but the little it shows is enough to keep us h
                     >
                       <button
                         onClick={() => {
-                          setShowPhotoEssay(false);
                           setShowBlogEntriesPage(true);
                           setIsDropdownOpen(false);
                         }}
@@ -390,6 +442,16 @@ The deep sea doesn't reveal much, but the little it shows is enough to keep us h
                       >
                         <Camera className="w-4 h-4" />
                         <span>Photo Essay</span>
+                      </button>
+                      <button
+                        onClick={() => {
+                          setShowVideoEssay(true);
+                          setIsDropdownOpen(false);
+                        }}
+                        className="w-full px-4 py-3 text-left flex items-center gap-3 hover:bg-white/10 transition-colors text-cyan-300 hover:text-cyan-200"
+                      >
+                        <Video className="w-4 h-4" />
+                        <span>Video Essay</span>
                       </button>
                     </motion.div>
                   )}
@@ -429,6 +491,7 @@ The deep sea doesn't reveal much, but the little it shows is enough to keep us h
           <div
             key={zoneIndex}
             className="relative z-10 max-w-6xl mx-auto px-6 py-24"
+            ref={(el) => (zoneRefs.current[zoneIndex] = el)}
           >
             <motion.div
               initial={{ opacity: 0 }}
@@ -689,6 +752,13 @@ The deep sea doesn't reveal much, but the little it shows is enough to keep us h
       <AnimatePresence>
         {showPhotoEssay && (
           <PhotoEssay onClose={() => setShowPhotoEssay(false)} />
+        )}
+      </AnimatePresence>
+
+      {/* Video Essay Page */}
+      <AnimatePresence>
+        {showVideoEssay && (
+          <VideoEssay onClose={() => setShowVideoEssay(false)} />
         )}
       </AnimatePresence>
 
